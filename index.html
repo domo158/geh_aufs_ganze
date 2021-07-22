@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Geh Aufs Ganze</title>
+</head>
+<body class="bg-dark">
+  <div class="container" style="height: 100vh;" >
+    <div class="row text-center pt-3 text-white">
+      <div class="col-md-12">
+        <h1>Geh Aufs Ganze</h1>
+        <p class="mt-4">Hinter einer der 3 Türen befindet sich ein grosser Preis.</p>
+      </div>
+    </div>
+    <div class="row text-center pt-5">
+      <div class="col-lg-12 text-center">
+        <button id="btnStart" class="btn btn-primary btn-lg">Start Game</button>
+
+      </div>
+    </div>
+    <div class="row pt-5  text-center text-white">
+      <div class="col-md-4">
+        <div class="card bg-transparent border border-white hover-overla" id="door1" style="height: 300px">
+          <div class="card-body">
+            <h5 class="card-title  my-4">Tuer 1</h5>
+            <p class="card-text">Ist der mögliche Preis hinter Tür 1?</p>
+            <button type="button" id="btn1" class="btn btn-primary mt-4"  value="1">Tür 1 Öffnen</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-transparent border border-white" id="door2" style="height: 300px">
+          <div class="card-body">
+            <h5 class="card-title  my-4">Tuer 2</h5>
+            <p class="card-text">Ist der mögliche Preis hinter Tür 2?</p>
+            <button type="button" id="btn2" class="btn btn-primary mt-4"  value="2">Tür 2 Öffnen</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-transparent border border-white" id="door3" style="height: 300px">
+          <div class="card-body">
+            <h5 class="card-title  my-4">Tuer 3</h5>
+            <p class="card-text">Ist der mögliche Preis hinter Tür 3?</p>
+            <button type="button" id="btn3" class="btn btn-primary mt-4"  value="3">Tür 3 Öffnen</button>
+          </div>
+        </div>
+      </div>
+     
+      
+
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Wohlen Sie ihre auswahl beibehalt oder aendern?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="saveBtn" class="btn btn-primary" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="resultModal" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="resultModalLabel">Win/Lose</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primarys" data-dismiss="modal">Schliessen</button>
+          <button type="button" id="resultBtn" class="btn btn-primary" data-dismiss="modal">Neues Spiel?</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
